@@ -1,0 +1,456 @@
+time="2021-05-11T05:31:10Z" level=info msg="Scanning plugins in ./plugins.d (pwd: /)"
+time="2021-05-11T05:31:10Z" level=info msg="Scanning plugins in /etc/sonobuoy/plugins.d (pwd: /)"
+time="2021-05-11T05:31:10Z" level=info msg="Directory (/etc/sonobuoy/plugins.d) does not exist"
+time="2021-05-11T05:31:10Z" level=info msg="Scanning plugins in ~/sonobuoy/plugins.d (pwd: /)"
+time="2021-05-11T05:31:10Z" level=info msg="Directory (~/sonobuoy/plugins.d) does not exist"
+I0511 05:31:10.906241       1 request.go:557] Throttling request took 78.925379ms, request: GET:https://10.96.0.1:443/apis/controlplane.antrea.io/v1beta2?timeout=32s
+time="2021-05-11T05:31:11Z" level=info msg="Filtering namespaces based on the following regex:.*"
+time="2021-05-11T05:31:11Z" level=info msg="Namespace default Matched=true"
+time="2021-05-11T05:31:11Z" level=info msg="Namespace kube-node-lease Matched=true"
+time="2021-05-11T05:31:11Z" level=info msg="Namespace kube-public Matched=true"
+time="2021-05-11T05:31:11Z" level=info msg="Namespace kube-system Matched=true"
+time="2021-05-11T05:31:11Z" level=info msg="Namespace local-path-storage Matched=true"
+time="2021-05-11T05:31:11Z" level=info msg="Namespace sonobuoy Matched=true"
+time="2021-05-11T05:31:11Z" level=info msg="Starting server Expected Results: [{global e2e} {antrea-2021-05-11-77j3ob-control-plane systemd-logs} {antrea-2021-05-11-77j3ob-worker systemd-logs} {antrea-2021-05-11-77j3ob-worker2 systemd-logs}]"
+time="2021-05-11T05:31:11Z" level=info msg="Starting annotation update routine"
+time="2021-05-11T05:31:11Z" level=info msg="Starting aggregation server" address=0.0.0.0 port=8080
+time="2021-05-11T05:31:11Z" level=info msg="Running plugin" plugin=e2e
+time="2021-05-11T05:31:11Z" level=info msg="Running plugin" plugin=systemd-logs
+time="2021-05-11T05:31:34Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T05:31:37Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T05:31:42Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:31:44Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T05:32:08Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:32:14Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:32:16Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:32:20Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:32:26Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:38:32Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:38:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:39:00Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:39:02Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:39:02Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:39:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:39:07Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:39:28Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:39:32Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:39:58Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:40:02Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:40:02Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:40:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:40:06Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:40:07Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:40:12Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:40:33Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:40:35Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:40:45Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:42:27Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:42:32Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:42:38Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:42:42Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:42:44Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:43:07Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:45:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:46:00Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:46:19Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:46:21Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:46:21Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:46:22Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:46:24Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:46:28Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:46:39Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:46:41Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:46:49Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:46:51Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:47:51Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:47:58Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:48:00Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:48:28Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:48:30Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:48:51Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:49:13Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:49:18Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:49:20Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:49:24Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:49:26Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:49:35Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:49:36Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:49:38Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:49:38Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:49:46Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:49:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:50:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:50:06Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:50:28Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:50:31Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:50:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:50:54Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:50:54Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:51:02Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:51:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:51:14Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:51:16Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:51:18Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:51:25Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:51:32Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:51:36Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:56:42Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:56:58Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:57:00Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:57:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:59:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:59:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T05:59:51Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:00:23Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:00:25Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:00:29Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:00:31Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:00:41Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:00:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:00:52Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:00:52Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:00:57Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:01:37Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:01:37Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:01:39Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:02:52Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:02:52Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:02:52Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:03:24Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:03:27Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:04:08Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:04:10Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:05:23Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:06:01Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:06:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:06:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:06:54Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:06:56Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:06:57Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:07:59Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:08:02Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:08:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:08:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:08:28Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:08:39Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:08:41Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:08:52Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:08:58Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:09:08Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:09:08Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:12:19Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:12:41Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:12:53Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:12:55Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:13:01Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:13:19Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:13:22Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:13:25Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:13:29Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:13:34Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:13:38Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:14:00Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:14:00Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:15:00Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:15:02Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:15:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:15:06Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:15:13Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:15:15Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:15:34Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:15:36Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:15:57Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:15:59Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:16:01Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:16:08Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:16:09Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:16:09Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:16:12Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:16:13Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:16:15Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:16:17Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:16:54Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:16:56Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:16:58Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:17:20Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:17:35Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:17:52Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:17:52Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:17:55Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:17:57Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:18:00Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:18:02Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:18:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:18:13Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:18:30Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:18:32Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:18:34Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:18:34Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:18:36Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:19:18Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:19:23Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:19:29Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:19:34Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:20:58Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:21:22Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:21:29Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:21:29Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:21:35Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:21:38Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:21:40Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:21:41Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:23:13Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:23:20Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:23:20Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:23:25Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:23:40Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:23:42Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:23:44Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:23:46Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:23:47Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:23:51Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:24:08Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:24:10Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:24:13Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:24:16Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:24:21Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:24:26Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:24:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:25:18Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:25:20Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:25:20Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:25:24Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:25:26Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:25:28Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:25:31Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:29:33Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:29:39Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:29:49Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:29:58Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:31:20Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:31:37Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T06:31:37Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T06:31:39Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T06:31:39Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T06:31:46Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T06:31:46Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T06:31:47Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:31:53Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T06:31:53Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T06:31:53Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T06:31:53Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T06:32:02Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T06:32:02Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T06:32:08Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:32:17Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T06:32:17Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T06:32:21Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T06:32:21Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T06:32:30Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T06:32:30Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T06:33:04Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T06:33:04Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T06:33:11Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T06:33:11Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T06:33:12Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:33:12Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T06:33:12Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T06:33:22Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:33:23Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:33:30Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:33:32Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:33:41Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:33:55Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:33:58Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:34:27Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T06:34:27Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T06:34:38Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T06:34:38Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T06:34:41Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T06:34:41Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T06:35:28Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:35:30Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:35:32Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:35:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:36:21Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:36:25Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:36:27Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:36:39Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:36:42Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:36:42Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:37:19Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T06:37:19Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T06:37:25Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T06:37:25Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T06:37:29Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T06:37:29Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T06:39:00Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:39:02Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:39:07Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:39:23Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:39:26Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:41:41Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:41:44Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:42:23Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T06:42:23Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T06:42:28Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T06:42:28Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T06:42:37Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T06:42:37Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T06:42:53Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:42:53Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:42:55Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:42:59Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:43:23Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:43:26Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:45:28Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:45:32Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:45:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:45:50Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:45:51Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:45:52Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:45:52Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:46:03Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:46:10Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:46:12Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:46:59Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:47:01Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:47:05Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:47:29Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T06:47:29Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T06:47:35Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T06:47:35Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T06:47:47Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T06:47:47Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T06:47:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:47:58Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:48:00Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:48:02Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:49:03Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:49:03Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:49:26Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:49:28Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:49:33Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:49:35Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:49:37Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:49:39Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:49:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:49:48Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:49:51Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:52:41Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T06:52:41Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T06:52:44Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T06:52:44Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T06:52:51Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T06:52:51Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T06:53:55Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:53:57Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:53:57Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:55:28Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:57:51Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T06:57:51Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T06:57:51Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T06:57:51Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T06:57:59Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T06:57:59Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T06:59:31Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T06:59:38Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:00:38Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:00:51Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:01:58Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:00Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:18Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:20Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:30Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:36Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:38Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:39Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:41Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:41Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:43Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:49Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:50Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:02:53Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T07:02:53Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T07:03:02Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T07:03:02Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T07:03:07Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T07:03:07Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T07:04:08Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:04:28Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:04:30Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:05:42Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:07:08Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:07:15Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:07:15Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:07:15Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:07:59Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-control-plane plugin_name=systemd-logs
+time="2021-05-11T07:07:59Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-control-plane already received"
+time="2021-05-11T07:08:04Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker plugin_name=systemd-logs
+time="2021-05-11T07:08:04Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker already received"
+time="2021-05-11T07:08:15Z" level=info msg="received aggregator request" client_cert=systemd-logs node=antrea-2021-05-11-77j3ob-worker2 plugin_name=systemd-logs
+time="2021-05-11T07:08:15Z" level=error msg="Result processing error (409): result systemd-logs/antrea-2021-05-11-77j3ob-worker2 already received"
+time="2021-05-11T07:08:41Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:08:50Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:08:57Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:08:59Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:08:59Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:09:01Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:09:04Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:10:07Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:10:12Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:10:59Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:11:01Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:11:17Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:11:39Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:11:40Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:11:41Z" level=info msg="received aggregator request" client_cert=e2e plugin_name=e2e
+time="2021-05-11T07:11:41Z" level=info msg="Last update to annotations on exit"
+time="2021-05-11T07:11:41Z" level=info msg="Shutting down aggregation server"
+I0511 07:11:41.138290       1 request.go:557] Throttling request took 50.117225ms, request: GET:https://10.96.0.1:443/apis/discovery.k8s.io/v1beta1?timeout=32s
+I0511 07:11:41.171283       1 request.go:557] Throttling request took 83.096541ms, request: GET:https://10.96.0.1:443/apis/node.k8s.io/v1beta1?timeout=32s
+I0511 07:11:41.204342       1 request.go:557] Throttling request took 116.132557ms, request: GET:https://10.96.0.1:443/apis/flowcontrol.apiserver.k8s.io/v1beta1?timeout=32s
+time="2021-05-11T07:11:41Z" level=info msg="csidrivers not specified in non-nil Resources. Skipping csidrivers query."
+time="2021-05-11T07:11:41Z" level=info msg="csinodes not specified in non-nil Resources. Skipping csinodes query."
+time="2021-05-11T07:11:41Z" level=info msg="prioritylevelconfigurations not specified in non-nil Resources. Skipping prioritylevelconfigurations query."
+time="2021-05-11T07:11:41Z" level=info msg="flowschemas not specified in non-nil Resources. Skipping flowschemas query."
+time="2021-05-11T07:11:41Z" level=info msg="clustergroups not specified in non-nil Resources. Skipping clustergroups query."
+time="2021-05-11T07:11:41Z" level=info msg="egresses not specified in non-nil Resources. Skipping egresses query."
+time="2021-05-11T07:11:41Z" level=info msg="egressgroups not specified in non-nil Resources. Skipping egressgroups query."
+time="2021-05-11T07:11:41Z" level=info msg="addressgroups not specified in non-nil Resources. Skipping addressgroups query."
+time="2021-05-11T07:11:41Z" level=info msg="appliedtogroups not specified in non-nil Resources. Skipping appliedtogroups query."
+time="2021-05-11T07:11:41Z" level=info msg="antreaagentinfos not specified in non-nil Resources. Skipping antreaagentinfos query."
+time="2021-05-11T07:11:41Z" level=info msg="antreacontrollerinfos not specified in non-nil Resources. Skipping antreacontrollerinfos query."
+time="2021-05-11T07:11:41Z" level=info msg="clusternetworkpolicies not specified in non-nil Resources. Skipping clusternetworkpolicies query."
+time="2021-05-11T07:11:41Z" level=info msg="tiers not specified in non-nil Resources. Skipping tiers query."
+time="2021-05-11T07:11:41Z" level=info msg="traceflows not specified in non-nil Resources. Skipping traceflows query."
+time="2021-05-11T07:11:41Z" level=info msg="antreaclusternetworkpolicystats not specified in non-nil Resources. Skipping antreaclusternetworkpolicystats query."
+time="2021-05-11T07:11:41Z" level=info msg="ingressclasses not specified in non-nil Resources. Skipping ingressclasses query."
+time="2021-05-11T07:11:41Z" level=info msg="controllerinfos not specified in non-nil Resources. Skipping controllerinfos query."
+time="2021-05-11T07:11:41Z" level=info msg="runtimeclasses not specified in non-nil Resources. Skipping runtimeclasses query."
+time="2021-05-11T07:11:41Z" level=info msg="endpointslices not specified in non-nil Resources. Skipping endpointslices query."
+time="2021-05-11T07:11:41Z" level=info msg="antreanetworkpolicystats not specified in non-nil Resources. Skipping antreanetworkpolicystats query."
+time="2021-05-11T07:11:41Z" level=info msg="networkpolicystats not specified in non-nil Resources. Skipping networkpolicystats query."
+time="2021-05-11T07:11:41Z" level=info msg="horizontalpodautoscalers not specified in non-nil Resources. Skipping horizontalpodautoscalers query."
+time="2021-05-11T07:11:41Z" level=info msg="events not specified in non-nil Resources. Skipping events query."
+time="2021-05-11T07:11:41Z" level=info msg="secrets not specified in non-nil Resources. Skipping secrets query."
+time="2021-05-11T07:11:41Z" level=info msg="externalentities not specified in non-nil Resources. Skipping externalentities query."
+time="2021-05-11T07:11:41Z" level=info msg="Collecting Node Configuration and Health..."
+time="2021-05-11T07:11:41Z" level=info msg="Creating host results for antrea-2021-05-11-77j3ob-control-plane under /tmp/sonobuoy/37e9ed52-2b2c-4861-99ce-f44d99efe865/hosts/antrea-2021-05-11-77j3ob-control-plane\n"
+time="2021-05-11T07:11:41Z" level=info msg="Creating host results for antrea-2021-05-11-77j3ob-worker under /tmp/sonobuoy/37e9ed52-2b2c-4861-99ce-f44d99efe865/hosts/antrea-2021-05-11-77j3ob-worker\n"
+time="2021-05-11T07:11:41Z" level=info msg="Creating host results for antrea-2021-05-11-77j3ob-worker2 under /tmp/sonobuoy/37e9ed52-2b2c-4861-99ce-f44d99efe865/hosts/antrea-2021-05-11-77j3ob-worker2\n"
+time="2021-05-11T07:11:41Z" level=info msg="Running cluster queries"
+time="2021-05-11T07:11:41Z" level=info msg="Running ns query (default)"
+time="2021-05-11T07:11:41Z" level=info msg="Running ns query (kube-node-lease)"
+time="2021-05-11T07:11:41Z" level=info msg="Running ns query (kube-public)"
+time="2021-05-11T07:11:42Z" level=info msg="Running ns query (kube-system)"
+time="2021-05-11T07:11:43Z" level=info msg="Running ns query (local-path-storage)"
+time="2021-05-11T07:11:43Z" level=info msg="Running ns query (sonobuoy)"
+time="2021-05-11T07:11:44Z" level=info msg="Namespace crd-publish-openapi-5118 Matched=false"
+time="2021-05-11T07:11:44Z" level=info msg="Namespace default Matched=false"
+time="2021-05-11T07:11:44Z" level=info msg="Namespace kube-node-lease Matched=false"
+time="2021-05-11T07:11:44Z" level=info msg="Namespace kube-public Matched=false"
+time="2021-05-11T07:11:44Z" level=info msg="Namespace kube-system Matched=false"
+time="2021-05-11T07:11:44Z" level=info msg="Namespace local-path-storage Matched=false"
+time="2021-05-11T07:11:44Z" level=info msg="Namespace sonobuoy Matched=true"
+time="2021-05-11T07:11:44Z" level=info msg="Collecting Pod Logs by namespace (sonobuoy)"

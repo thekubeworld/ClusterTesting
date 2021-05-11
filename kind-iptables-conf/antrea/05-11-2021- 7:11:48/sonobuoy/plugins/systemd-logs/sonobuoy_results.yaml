@@ -1,0 +1,32 @@
+name: systemd-logs
+status: passed
+meta:
+  type: summary
+items:
+- name: antrea-2021-05-11-77j3ob-control-plane
+  status: passed
+  meta:
+    type: node
+  items:
+  - name: systemd_logs
+    status: passed
+    meta:
+      file: results/antrea-2021-05-11-77j3ob-control-plane/systemd_logs
+- name: antrea-2021-05-11-77j3ob-worker
+  status: passed
+  meta:
+    type: node
+  items:
+  - name: systemd_logs
+    status: passed
+    meta:
+      file: results/antrea-2021-05-11-77j3ob-worker/systemd_logs
+- name: antrea-2021-05-11-77j3ob-worker2
+  status: passed
+  meta:
+    type: node
+  items:
+  - name: systemd_logs
+    status: passed
+    meta:
+      file: results/antrea-2021-05-11-77j3ob-worker2/systemd_logs
