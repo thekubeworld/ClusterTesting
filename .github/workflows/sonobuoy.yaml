@@ -38,7 +38,6 @@ jobs:
       - name: Commit files
         id: commit
         run: |
-          pushd ./main
             git config --local user.email "action@github.com"
             git config --local user.name "github-actions"
             outfile=$(sonobuoy retrieve)
@@ -52,7 +51,6 @@ jobs:
                git commit -m "Add output from sonobuoy tests" -a
                echo "::set-output name=push::true"
             fi
-         popd
         shell: bash
       - name: Push changes
         if: steps.commit.outputs.push == 'true'
