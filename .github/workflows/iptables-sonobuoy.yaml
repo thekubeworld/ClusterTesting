@@ -41,7 +41,7 @@ jobs:
           pushd ./main
             git config --local user.email "action@github.com"
             git config --local user.name "github-actions"
-            curdate=$(date +"%m-%d-%Y-%k-%M-%S")
+            curdate=$(date +"%m-%d-%Y-%k:%M:%S")
             mkdir -p kind-iptables-conf/"$curdate"/sonobuoy/
             outfile=$(sonobuoy retrieve)
             sonobuoy results "$outfile"
