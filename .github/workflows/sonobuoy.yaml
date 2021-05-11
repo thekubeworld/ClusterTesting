@@ -29,10 +29,10 @@ jobs:
           pushd ./k8s-local-dev
             ANTREA_VERSION=v1.0.1 ./k8s-local-dev antrea
           popd
-          apt update
-          apt install wget -y
-          wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v$SONOBUOY_VERSION:/sonobuoy_$SONOBUOY_VERSION_linux_amd64.tar.gz
-          tar zxvf sonobuoy_$SONOBUOY_VERSION_linux_amd64.tar.gz -C /bin
+          sudo apt update
+          sudo apt install wget -y
+          sudo wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v$SONOBUOY_VERSION:/sonobuoy_$SONOBUOY_VERSION_linux_amd64.tar.gz
+          sudo tar zxvf sonobuoy_$SONOBUOY_VERSION_linux_amd64.tar.gz -C /bin
           sonobuoy run --mode=certified-conformance --wait
         env:
           SONOBUOY_VERSION: 0.50.0
