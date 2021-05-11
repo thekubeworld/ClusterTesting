@@ -43,9 +43,10 @@ jobs:
             git config --local user.name "github-actions"
             outfile=$(sonobuoy retrieve)
             sonobuoy results $outfile
-            mkdir kind-iptables-conf
-            mv $outfile kind-iptables-conf
-            git add kind-iptables-conf/$outfile
+            curdate=$(date +"%m-%d-%Y-%k-%M-%S")
+            mkdir -p kind-iptables-conf/$curdate
+            tar zxvf $outfile -C kind-iptables-conf/$curdate/
+            git add kind-iptables-conf/$curdate
             git commit -m "Add output from sonobuoy tests" -a
           popd
         shell: bash
