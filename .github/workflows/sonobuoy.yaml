@@ -47,16 +47,11 @@ jobs:
             mkdir kind-iptables-conf
             mv $outfile kind-iptables-conf
             git add kind-iptables-conf/$outfile
-            if [-z "$(git status --porcelain)"]; then
-               echo "::set-output name=push::false"
-            else
-               git commit -m "Add output from sonobuoy tests" -a
-               echo "::set-output name=push::true"
-            fi
+            git commit -m "Add output from sonobuoy tests" -a
             popd
         shell: bash
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
