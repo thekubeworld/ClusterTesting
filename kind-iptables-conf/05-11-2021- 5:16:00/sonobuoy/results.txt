@@ -1,0 +1,6 @@
+Plugin: e2e
+Status: passed
+Total: 5667
+Passed: 1
+Failed: 0
+Skipped: 5666
