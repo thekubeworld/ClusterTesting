@@ -37,9 +37,8 @@ jobs:
           sonobuoy run --mode=Quick --wait
           #sonobuoy run --mode=certified-conformance --wait
       - name: Commit files
-        id: commit
         run: |
-            pushd ./main
+          #pushd ./main
             git config --local user.email "action@github.com"
             git config --local user.name "github-actions"
             outfile=$(sonobuoy retrieve)
@@ -48,7 +47,7 @@ jobs:
             mv $outfile kind-iptables-conf
             git add kind-iptables-conf/$outfile
             git commit -m "Add output from sonobuoy tests" -a
-            #popd
+            # popd
         shell: bash
       - name: Push changes
         uses: ad-m/github-push-action@master
