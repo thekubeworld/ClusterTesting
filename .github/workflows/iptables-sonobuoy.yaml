@@ -1,4 +1,4 @@
-name: "iptables sonobuoy tests"
+name: "sonobuoy iptables antrea tests"
 on:
   workflow_dispatch:
   schedule:
@@ -6,7 +6,7 @@ on:
     - cron: '00 15 * * *'
 
 jobs:
-  iptables-sonobuoy-tests:
+  sonobuoy-iptables-antrea-tests:
     runs-on: [ ubuntu-18.04 ]
     env:
       GOPATH: /home/runner/work/k8devel/go
