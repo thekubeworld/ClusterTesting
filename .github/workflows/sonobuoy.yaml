@@ -1,4 +1,4 @@
-name: "framework tests"
+name: "sonobuoy tests"
 on:
   workflow_dispatch:
   schedule:
@@ -6,7 +6,7 @@ on:
     - cron: '00 15 * * *'
 
 jobs:
-  framework-tests:
+  sonobuoy-tests:
     runs-on: [ ubuntu-18.04 ]
     env:
       GOPATH: /home/runner/work/k8devel/go
