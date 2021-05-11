@@ -1,0 +1,63 @@
+{"level":"info","msg":"Filtering namespaces based on the following regex:.*","time":"2021-05-11T05:02:44Z"}
+{"level":"info","msg":"Namespace default Matched=true","time":"2021-05-11T05:02:44Z"}
+{"level":"info","msg":"Namespace kube-node-lease Matched=true","time":"2021-05-11T05:02:44Z"}
+{"level":"info","msg":"Namespace kube-public Matched=true","time":"2021-05-11T05:02:44Z"}
+{"level":"info","msg":"Namespace kube-system Matched=true","time":"2021-05-11T05:02:44Z"}
+{"level":"info","msg":"Namespace local-path-storage Matched=true","time":"2021-05-11T05:02:44Z"}
+{"level":"info","msg":"Namespace sonobuoy Matched=true","time":"2021-05-11T05:02:44Z"}
+{"level":"info","msg":"Starting server Expected Results: [{global e2e}]","time":"2021-05-11T05:02:44Z"}
+{"level":"info","msg":"Starting annotation update routine","time":"2021-05-11T05:02:44Z"}
+{"address":"0.0.0.0","level":"info","msg":"Starting aggregation server","port":8080,"time":"2021-05-11T05:02:44Z"}
+{"level":"info","msg":"Running plugin","plugin":"e2e","time":"2021-05-11T05:02:44Z"}
+{"client_cert":"e2e","level":"info","msg":"received aggregator request","plugin_name":"e2e","time":"2021-05-11T05:02:52Z"}
+{"client_cert":"e2e","level":"info","msg":"received aggregator request","plugin_name":"e2e","time":"2021-05-11T05:03:11Z"}
+{"client_cert":"e2e","level":"info","msg":"received aggregator request","plugin_name":"e2e","time":"2021-05-11T05:03:11Z"}
+{"client_cert":"e2e","level":"info","msg":"received aggregator request","plugin_name":"e2e","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"Last update to annotations on exit","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"Shutting down aggregation server","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"tiers not specified in non-nil Resources. Skipping tiers query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"clusternetworkpolicies not specified in non-nil Resources. Skipping clusternetworkpolicies query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"traceflows not specified in non-nil Resources. Skipping traceflows query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"prioritylevelconfigurations not specified in non-nil Resources. Skipping prioritylevelconfigurations query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"flowschemas not specified in non-nil Resources. Skipping flowschemas query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"addressgroups not specified in non-nil Resources. Skipping addressgroups query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"appliedtogroups not specified in non-nil Resources. Skipping appliedtogroups query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"egressgroups not specified in non-nil Resources. Skipping egressgroups query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"runtimeclasses not specified in non-nil Resources. Skipping runtimeclasses query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"egresses not specified in non-nil Resources. Skipping egresses query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"clustergroups not specified in non-nil Resources. Skipping clustergroups query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"antreaclusternetworkpolicystats not specified in non-nil Resources. Skipping antreaclusternetworkpolicystats query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"controllerinfos not specified in non-nil Resources. Skipping controllerinfos query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"csinodes not specified in non-nil Resources. Skipping csinodes query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"csidrivers not specified in non-nil Resources. Skipping csidrivers query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"antreacontrollerinfos not specified in non-nil Resources. Skipping antreacontrollerinfos query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"antreaagentinfos not specified in non-nil Resources. Skipping antreaagentinfos query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"ingressclasses not specified in non-nil Resources. Skipping ingressclasses query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"events not specified in non-nil Resources. Skipping events query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"secrets not specified in non-nil Resources. Skipping secrets query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"externalentities not specified in non-nil Resources. Skipping externalentities query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"antreanetworkpolicystats not specified in non-nil Resources. Skipping antreanetworkpolicystats query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"networkpolicystats not specified in non-nil Resources. Skipping networkpolicystats query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"endpointslices not specified in non-nil Resources. Skipping endpointslices query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"horizontalpodautoscalers not specified in non-nil Resources. Skipping horizontalpodautoscalers query.","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"Collecting Node Configuration and Health...","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"Creating host results for antrea-2021-05-11-7sp2pe-control-plane under /tmp/sonobuoy/464909d4-76c3-4a1f-a525-7921f8d08fe0/hosts/antrea-2021-05-11-7sp2pe-control-plane\n","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"Creating host results for antrea-2021-05-11-7sp2pe-worker under /tmp/sonobuoy/464909d4-76c3-4a1f-a525-7921f8d08fe0/hosts/antrea-2021-05-11-7sp2pe-worker\n","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"Creating host results for antrea-2021-05-11-7sp2pe-worker2 under /tmp/sonobuoy/464909d4-76c3-4a1f-a525-7921f8d08fe0/hosts/antrea-2021-05-11-7sp2pe-worker2\n","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"Running cluster queries","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"Running ns query (default)","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"Running ns query (kube-node-lease)","time":"2021-05-11T05:03:11Z"}
+{"level":"info","msg":"Running ns query (kube-public)","time":"2021-05-11T05:03:12Z"}
+{"level":"info","msg":"Running ns query (kube-system)","time":"2021-05-11T05:03:12Z"}
+{"level":"info","msg":"Running ns query (local-path-storage)","time":"2021-05-11T05:03:13Z"}
+{"level":"info","msg":"Running ns query (sonobuoy)","time":"2021-05-11T05:03:14Z"}
+{"level":"info","msg":"Namespace default Matched=false","time":"2021-05-11T05:03:15Z"}
+{"level":"info","msg":"Namespace kube-node-lease Matched=false","time":"2021-05-11T05:03:15Z"}
+{"level":"info","msg":"Namespace kube-public Matched=false","time":"2021-05-11T05:03:15Z"}
+{"level":"info","msg":"Namespace kube-system Matched=false","time":"2021-05-11T05:03:15Z"}
+{"level":"info","msg":"Namespace local-path-storage Matched=false","time":"2021-05-11T05:03:15Z"}
+{"level":"info","msg":"Namespace pods-3747 Matched=false","time":"2021-05-11T05:03:15Z"}
+{"level":"info","msg":"Namespace sonobuoy Matched=true","time":"2021-05-11T05:03:15Z"}
+{"level":"info","msg":"Collecting Pod Logs by namespace (sonobuoy)","time":"2021-05-11T05:03:15Z"}
+{"level":"info","msg":"Collecting Pod Logs by FieldSelectors []","time":"2021-05-11T05:03:15Z"}
+{"level":"info","msg":"Log lines after this point will not appear in the downloaded tarball.","time":"2021-05-11T05:03:15Z"}
