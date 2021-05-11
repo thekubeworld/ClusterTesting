@@ -38,19 +38,21 @@ jobs:
       - name: Commit files
         id: commit
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "github-actions"
-          outfile=$(sonobuoy retrieve)
-          sonobuoy results $outfile
-          mkdir kind-iptables-conf-$(date +"%m-%d-%Y-%k:%M:%S")/
-          mv $outfile kind-iptables-conf*
-          git add kind-iptables-conf*/$outfile
-          if [-z "$(git status --porcelain)"]; then
-             echo "::set-output name=push::false"
-          else
-             git commit -m "Add output from sonobuoy tests" -a
-             echo "::set-output name=push::true"
-          fi
+          pushd ./main
+            git config --local user.email "action@github.com"
+            git config --local user.name "github-actions"
+            outfile=$(sonobuoy retrieve)
+            sonobuoy results $outfile
+            mkdir kind-iptables-conf-$(date +"%m-%d-%Y-%k:%M:%S")/
+            mv $outfile kind-iptables-conf*
+            git add kind-iptables-conf*/$outfile
+            if [-z "$(git status --porcelain)"]; then
+               echo "::set-output name=push::false"
+            else
+               git commit -m "Add output from sonobuoy tests" -a
+               echo "::set-output name=push::true"
+            fi
+         popd
         shell: bash
       - name: Push changes
         if: steps.commit.outputs.push == 'true'
