@@ -44,7 +44,7 @@ jobs:
             curdate=$(date +"%m-%d-%Y-%k:%M:%S")
             mkdir -p kind-iptables-conf/"$curdate"/sonobuoy/
             outfile=$(sonobuoy retrieve)
-            sonobuoy results "$outfile"
+            sonobuoy results "$outfile" &> kind-iptables-conf/"$curdate"/sonobuoy/results.txt
             mv "$outfile" kind-iptables-conf/"$curdate"/sonobuoy/
             pushd "kind-iptables-conf/$curdate/sonobuoy/"
                 tar zxvf "$outfile"
