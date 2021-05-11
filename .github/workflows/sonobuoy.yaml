@@ -31,7 +31,7 @@ jobs:
           popd
           sudo apt update
           sudo apt install wget -y
-          sudo wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v$SONOBUOY_VERSION:/sonobuoy_$SONOBUOY_VERSION_linux_amd64.tar.gz
+          sudo wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v$SONOBUOY_VERSION/sonobuoy_$SONOBUOY_VERSION_linux_amd64.tar.gz
           sudo tar zxvf sonobuoy_$SONOBUOY_VERSION_linux_amd64.tar.gz -C /bin
           sonobuoy run --mode=certified-conformance --wait
         env:
