@@ -48,7 +48,7 @@ jobs:
             mv $outfile kind-iptables-conf
             git add kind-iptables-conf/$outfile
             git commit -m "Add output from sonobuoy tests" -a
-            popd
+            #popd
         shell: bash
       - name: Push changes
         uses: ad-m/github-push-action@master
