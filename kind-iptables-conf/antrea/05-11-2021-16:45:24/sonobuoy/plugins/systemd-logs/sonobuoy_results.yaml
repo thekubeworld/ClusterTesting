@@ -1,0 +1,32 @@
+name: systemd-logs
+status: passed
+meta:
+  type: summary
+items:
+- name: antrea-2021-05-11-iipfwk-control-plane
+  status: passed
+  meta:
+    type: node
+  items:
+  - name: systemd_logs
+    status: passed
+    meta:
+      file: results/antrea-2021-05-11-iipfwk-control-plane/systemd_logs
+- name: antrea-2021-05-11-iipfwk-worker
+  status: passed
+  meta:
+    type: node
+  items:
+  - name: systemd_logs
+    status: passed
+    meta:
+      file: results/antrea-2021-05-11-iipfwk-worker/systemd_logs
+- name: antrea-2021-05-11-iipfwk-worker2
+  status: passed
+  meta:
+    type: node
+  items:
+  - name: systemd_logs
+    status: passed
+    meta:
+      file: results/antrea-2021-05-11-iipfwk-worker2/systemd_logs
