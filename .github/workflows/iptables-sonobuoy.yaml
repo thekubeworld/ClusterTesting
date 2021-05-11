@@ -45,7 +45,10 @@ jobs:
             mkdir -p kind-iptables-conf/$curdate/sonobuoy/
             outfile=$(sonobuoy retrieve)
             sonobuoy results $outfile
-            tar zxvf $outfile -C kind-iptables-conf/$curdate/sonobuoy/
+            mv $outfile kind-iptables-conf/$curdate/sonobuoy/
+            pushd kind-iptables-conf/$curdate/sonobuoy/
+                tar zxvf $outfile
+            popd
             git add kind-iptables-conf/$curdate
             git commit -m "Add output from sonobuoy tests" -a
           popd
