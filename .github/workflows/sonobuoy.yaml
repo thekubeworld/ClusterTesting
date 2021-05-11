@@ -33,7 +33,7 @@ jobs:
           sudo apt install wget -y
           wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.50.0/sonobuoy_0.50.0_linux_amd64.tar.gz
           sudo tar zxvf sonobuoy_0.50.0_linux_amd64.tar.gz -C /bin
-          sonobuoy run --mode=Quick --sonobuoy-image gcr.io/heptio-images/sonobuoy:latest
+          sonobuoy run --mode=Quick --sonobuoy-image gcr.io/heptio-images/sonobuoy:latest --wait
           #sonobuoy run --mode=certified-conformance --wait
       - name: Commit files
         id: commit
