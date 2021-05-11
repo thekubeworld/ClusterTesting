@@ -1,0 +1,60 @@
+name: "sonobuoy ipvs antrea tests"
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily, 3:00pm
+    - cron: '00 15 * * *'
+
+jobs:
+  sonobuoy-ipvs-antrea-tests:
+    runs-on: [ ubuntu-18.04 ]
+    env:
+      GOPATH: /home/runner/work/k8devel/go
+      GO111MODULE: auto
+    steps:
+      - uses: actions/checkout@v2
+        with:
+           path: main
+           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+
+        # Setup Go
+      - name: Setup Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.16.x'
+      - uses: actions/checkout@master
+        with:
+          repository: thekubeworld/k8s-local-dev
+          path: k8s-local-dev
+      - run: |
+          pushd ./k8s-local-dev
+            ANTREA_VERSION=v1.0.1 ./k8s-local-dev antrea --kube-proxy-mode ipvs
+          popd
+          sudo apt update
+          sudo apt install wget -y
+          wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.50.0/sonobuoy_0.50.0_linux_amd64.tar.gz
+          sudo tar zxvf sonobuoy_0.50.0_linux_amd64.tar.gz -C /bin
+          sonobuoy run --mode=certified-conformance --wait
+      - name: Commit files
+        run: |
+          pushd ./main
+            git config --local user.email "action@github.com"
+            git config --local user.name "github-actions"
+            curdate=$(date +"%m-%d-%Y-%k:%M:%S")
+            mkdir -p kind-ipvs-conf/antrea/"$curdate"/sonobuoy/
+            outfile=$(sonobuoy retrieve)
+            sonobuoy results "$outfile" &> kind-ipvs-conf/antrea/"$curdate"/sonobuoy/results.txt
+            mv "$outfile" kind-ipvs-conf/antrea/"$curdate"/sonobuoy/
+            pushd "kind-ipvs-conf/antrea/$curdate/sonobuoy/"
+                tar zxvf "$outfile"
+            popd
+            git add kind-ipvs-conf/antrea/"$curdate"
+            git commit -m "Add output from sonobuoy tests" -a
+          popd
+        shell: bash
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          directory: main
