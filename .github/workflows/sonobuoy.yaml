@@ -33,4 +33,26 @@ jobs:
           sudo apt install wget -y
           wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.50.0/sonobuoy_0.50.0_linux_amd64.tar.gz
           sudo tar zxvf sonobuoy_0.50.0_linux_amd64.tar.gz -C /bin
-          sonobuoy run --mode=certified-conformance --wait
+          sonobuoy run --mode=Quick --sonobuoy-image gcr.io/heptio-images/sonobuoy:latest
+          #sonobuoy run --mode=certified-conformance --wait
+      - name: Commit files
+        id: commit
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          outfile=$(sonobuoy retrieve)
+          mkdir kind-iptables-conf-$(date +"%m-%d-%Y-%k:%M:%S")/
+          mv $outfile kind-iptables-conf/
+          git add kind-iptables-conf/$outfile
+          if [-z "$(git status --porcelain)"]; then
+             echo "::set-output name=push::false"
+          else
+             git commit -m "Add output from sonobuoy tests" -a
+             echo "::set-output name=push::true"
+          fi
+        shell: bash
+      - name: Push changes
+        if: steps.commit.outputs.push == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+           github_token: ${{ secrets.GITHUB_TOKEN }}
