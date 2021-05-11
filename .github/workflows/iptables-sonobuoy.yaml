@@ -49,7 +49,7 @@ jobs:
             pushd "kind-iptables-conf/$curdate/sonobuoy/"
                 tar zxvf "$outfile"
             popd
-            git add kind-iptables-conf/$curdate
+            git add kind-iptables-conf/"$curdate"
             git commit -m "Add output from sonobuoy tests" -a
           popd
         shell: bash
