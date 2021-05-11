@@ -1,0 +1,38 @@
+name: "framework tests"
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily, 3:00pm
+    - cron: '00 15 * * *'
+
+jobs:
+  framework-tests:
+    runs-on: [ ubuntu-18.04 ]
+    env:
+      GOPATH: /home/runner/work/k8devel/go
+      GO111MODULE: auto
+    steps:
+      - uses: actions/checkout@v2
+        with:
+           path: main
+
+        # Setup Go
+      - name: Setup Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.16.x'
+      - uses: actions/checkout@master
+        with:
+          repository: thekubeworld/k8s-local-dev
+          path: k8s-local-dev
+      - run: |
+          pushd ./k8s-local-dev
+            ANTREA_VERSION=v1.0.1 ./k8s-local-dev antrea
+          popd
+          apt update
+          apt install wget -y
+          wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v$SONOBUOY_VERSION:/sonobuoy_$SONOBUOY_VERSION_linux_amd64.tar.gz
+          tar zxvf sonobuoy_$SONOBUOY_VERSION_linux_amd64.tar.gz -C /bin
+          sonobuoy run --mode=certified-conformance --wait
+        env:
+          SONOBUOY_VERSION: 0.50.0
