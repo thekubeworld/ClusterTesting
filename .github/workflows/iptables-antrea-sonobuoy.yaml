@@ -46,10 +46,7 @@ jobs:
             sonobuoy results "$outfile" &> kind-iptables-conf/antrea/"$curdate"/sonobuoy/results.log
             sonobuoy e2e "$outfile" &> kind-iptables-conf/antrea/"$curdate"/sonobuoy/e2e.log
             mv "$outfile" kind-iptables-conf/antrea/"$curdate"/sonobuoy/
-            #pushd "kind-iptables-conf/antrea/$curdate/sonobuoy/"
-            #    tar zxvf "$outfile"
-            #popd
-            git add kind-iptables-conf/antrea/"$curdate"
+            git add kind-iptables-conf/
             git commit -m "Add output from sonobuoy tests" -a
           popd
         shell: bash
