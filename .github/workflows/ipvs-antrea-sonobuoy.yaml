@@ -34,7 +34,7 @@ jobs:
           sudo apt install wget -y
           wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.50.0/sonobuoy_0.50.0_linux_amd64.tar.gz
           sudo tar zxvf sonobuoy_0.50.0_linux_amd64.tar.gz -C /bin
-          sonobuoy run --mode=certified-conformance --wait
+          sonobuoy run --e2e-focus  "\[sig-network\]|\[Conformance\]" --timeout 86400 --wait
       - name: Commit files
         run: |
           pushd ./main
@@ -43,12 +43,10 @@ jobs:
             curdate=$(date +"%m-%d-%Y-%k:%M:%S")
             mkdir -p kind-ipvs-conf/antrea/"$curdate"/sonobuoy/
             outfile=$(sonobuoy retrieve)
-            sonobuoy results "$outfile" &> kind-ipvs-conf/antrea/"$curdate"/sonobuoy/results.txt
+            sonobuoy results "$outfile" &> kind-ipvs-conf/antrea/"$curdate"/sonobuoy/results.log
+            sonobuoy e2e "$outfile" &> kind-ipvs-conf/antrea/"$curdate"/sonobuoy/e2e.log
             mv "$outfile" kind-ipvs-conf/antrea/"$curdate"/sonobuoy/
-            pushd "kind-ipvs-conf/antrea/$curdate/sonobuoy/"
-                tar zxvf "$outfile"
-            popd
-            git add kind-ipvs-conf/antrea/"$curdate"
+            git add kind-ipvs-conf/
             git commit -m "Add output from sonobuoy tests" -a
           popd
         shell: bash
