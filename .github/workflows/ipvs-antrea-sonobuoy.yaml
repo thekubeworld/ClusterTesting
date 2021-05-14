@@ -41,6 +41,7 @@ jobs:
             git config --local user.email "action@github.com"
             git config --local user.name "github-actions"
             curdate=$(date +"%m-%d-%Y-%k:%M:%S")
+            git fetch && git rebase
             mkdir -p kind-ipvs-conf/antrea/"$curdate"/sonobuoy/
             outfile=$(sonobuoy retrieve)
             sonobuoy results "$outfile" &> kind-ipvs-conf/antrea/"$curdate"/sonobuoy/results.log
