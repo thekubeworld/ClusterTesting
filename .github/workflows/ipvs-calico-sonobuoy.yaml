@@ -2,8 +2,8 @@ name: "sonobuoy ipvs calico tests"
 on:
   workflow_dispatch:
   schedule:
-    # Daily, 21:00pm
-    - cron: '00 21 * * *'
+    # Daily, 03:00am
+    - cron: '00 03 * * *'
 
 jobs:
   sonobuoy-ipvs-calico-tests:
