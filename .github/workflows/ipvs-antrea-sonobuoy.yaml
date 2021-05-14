@@ -2,8 +2,8 @@ name: "sonobuoy ipvs antrea tests"
 on:
   workflow_dispatch:
   schedule:
-    # Daily, 3:00pm
-    - cron: '00 15 * * *'
+    # Daily, 21:00pm
+    - cron: '00 21 * * *'
 
 jobs:
   sonobuoy-ipvs-antrea-tests:
