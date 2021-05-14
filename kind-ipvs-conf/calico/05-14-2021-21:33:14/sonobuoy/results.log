@@ -1,0 +1,24 @@
+Plugin: systemd-logs
+Status: passed
+Total: 3
+Passed: 3
+Failed: 0
+Skipped: 0
+
+Plugin: e2e
+Status: failed
+Total: 5667
+Passed: 398
+Failed: 9
+Skipped: 5260
+
+Failed tests:
+[k8s.io] [sig-node] NoExecuteTaintManager Multiple Pods [Serial] evicts pods with minTolerationSeconds [Disruptive] [Conformance]
+[sig-network] Services should be able to switch session affinity for LoadBalancer service with ESIPP off [Slow] [DisabledForLargeClusters] [LinuxOnly]
+[sig-network] Services should handle load balancer cleanup finalizer for service [Slow]
+[sig-network] ClusterDns [Feature:Example] should create pod that uses dns
+[sig-network] Networking Granular Checks: Services should be able to handle large requests: udp
+[sig-network] Services should be able to switch session affinity for LoadBalancer service with ESIPP on [Slow] [DisabledForLargeClusters] [LinuxOnly]
+[sig-network] Networking should provide Internet connection for containers [Feature:Networking-IPv6][Experimental][LinuxOnly]
+[sig-network] Services should have session affinity work for LoadBalancer service with ESIPP on [Slow] [DisabledForLargeClusters] [LinuxOnly]
+[sig-network] Services should have session affinity work for LoadBalancer service with ESIPP off [Slow] [DisabledForLargeClusters] [LinuxOnly]

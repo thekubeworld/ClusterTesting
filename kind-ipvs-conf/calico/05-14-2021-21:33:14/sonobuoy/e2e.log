@@ -1,0 +1,10 @@
+failed tests: 9
+[k8s.io] [sig-node] NoExecuteTaintManager Multiple Pods [Serial] evicts pods with minTolerationSeconds [Disruptive] [Conformance]
+[sig-network] ClusterDns [Feature:Example] should create pod that uses dns
+[sig-network] Networking Granular Checks: Services should be able to handle large requests: udp
+[sig-network] Networking should provide Internet connection for containers [Feature:Networking-IPv6][Experimental][LinuxOnly]
+[sig-network] Services should be able to switch session affinity for LoadBalancer service with ESIPP off [Slow] [DisabledForLargeClusters] [LinuxOnly]
+[sig-network] Services should be able to switch session affinity for LoadBalancer service with ESIPP on [Slow] [DisabledForLargeClusters] [LinuxOnly]
+[sig-network] Services should handle load balancer cleanup finalizer for service [Slow]
+[sig-network] Services should have session affinity work for LoadBalancer service with ESIPP off [Slow] [DisabledForLargeClusters] [LinuxOnly]
+[sig-network] Services should have session affinity work for LoadBalancer service with ESIPP on [Slow] [DisabledForLargeClusters] [LinuxOnly]
