@@ -30,8 +30,8 @@ jobs:
           pushd ./k8s-local-dev
             ./k8s-local-dev calico
           popd
-          sudo apt update
-          sudo apt install wget -y
+          #sudo apt update
+          #sudo apt install wget -y
           wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.50.0/sonobuoy_0.50.0_linux_amd64.tar.gz
           sudo tar zxvf sonobuoy_0.50.0_linux_amd64.tar.gz -C /bin
           sonobuoy run --e2e-focus  "\[sig-network\]|\[Conformance\]" --e2e-skip "\[Feature:IPv6DualStackAlphaFeature\]|\[Feature:SCTP\]" --timeout 86400 --wait
