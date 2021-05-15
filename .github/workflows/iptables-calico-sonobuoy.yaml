@@ -11,6 +11,7 @@ jobs:
     env:
       GOPATH: /home/runner/work/k8devel/go
       GO111MODULE: auto
+      NSNAME: $(cat /dev/urandom | tr -dc 'a-z' | fold -w 32 | head -n 1)
     steps:
       - uses: actions/checkout@v2
         with:
@@ -34,7 +35,7 @@ jobs:
           #sudo apt install wget -y
           wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.50.0/sonobuoy_0.50.0_linux_amd64.tar.gz
           sudo tar zxvf sonobuoy_0.50.0_linux_amd64.tar.gz -C /bin
-          sonobuoy run -n $(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1) --skip-preflight --e2e-focus  "\[sig-network\]|\[Conformance\]" --e2e-skip "\[Feature:IPv6DualStackAlphaFeature\]|\[Feature:SCTP\]" --timeout 86400 --wait
+          sonobuoy run -n $NSNAME --skip-preflight --e2e-focus  "\[sig-network\]|\[Conformance\]" --e2e-skip "\[Feature:IPv6DualStackAlphaFeature\]|\[Feature:SCTP\]" --timeout 86400 --wait
       - name: Commit files
         run: |
           pushd ./main
@@ -49,6 +50,7 @@ jobs:
             mv "$outfile" kind-iptables-conf/calico/"$curdate"/sonobuoy/
             git add kind-iptables-conf/
             git commit -m "Add output from sonobuoy tests" -a
+            kubectl delete ns $NSNAME
           popd
         shell: bash
       - name: Push changes
