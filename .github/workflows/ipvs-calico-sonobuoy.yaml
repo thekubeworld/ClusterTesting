@@ -34,7 +34,8 @@ jobs:
           sudo apt install wget -y
           wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.50.0/sonobuoy_0.50.0_linux_amd64.tar.gz
           sudo tar zxvf sonobuoy_0.50.0_linux_amd64.tar.gz -C /bin
-          sonobuoy run --e2e-focus  "\[sig-network\]|\[Conformance\]" --e2e-skip "\[Feature:IPv6DualStackAlphaFeature\]|\[Feature:SCTP\]|\[Slow\]" --timeout 86400 --wait
+          export NSNAME=sonobuoy$(cat /dev/urandom | tr -dc 'a-z' | fold -w 32 | head -n 1)
+    sonobuoy run -n $NSNAME --skip-preflight --e2e-focus  "\[sig-network\]|\[Conformance\]" --e2e-skip "\[Feature:IPv6DualStackAlphaFeature\]|\[Feature:SCTP\]" --timeout 86400 --wait
       - name: Commit files
         run: |
           pushd ./main
@@ -49,6 +50,7 @@ jobs:
             mv "$outfile" kind-ipvs-conf/calico/"$curdate"/sonobuoy/
             git add kind-ipvs-conf/
             git commit -m "Add output from sonobuoy tests" -a
+            kubectl delete ns $NSNAME
           popd
         shell: bash
       - name: Push changes
