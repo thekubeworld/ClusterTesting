@@ -7,7 +7,7 @@ on:
 
 jobs:
   sonobuoy-iptables-calico-tests:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       GOPATH: /home/runner/work/k8devel/go
       GO111MODULE: auto
