@@ -1,5 +1,0 @@
-failed tests: 4
-[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate custom resource with pruning [Conformance]
-[sig-network] ClusterDns [Feature:Example] should create pod that uses dns
-[sig-network] Networking should provide Internet connection for containers [Feature:Networking-IPv6][Experimental][LinuxOnly]
-[sig-network] Services should be able to create a functioning NodePort service [Conformance]
