@@ -38,15 +38,13 @@ jobs:
           popd
           wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.50.0/sonobuoy_0.50.0_linux_amd64.tar.gz
           sudo tar zxvf sonobuoy_0.50.0_linux_amd64.tar.gz -C /bin
-          sonobuoy run --mode quick
-          #sonobuoy run --e2e-focus  "\[sig-network\]|\[Conformance\]" --e2e-skip "\[Feature:IPv6DualStackAlphaFeature\]|\[Feature:SCTP\]" --timeout 86400 --wait
+          sonobuoy run --e2e-focus  "\[sig-network\]|\[Conformance\]" --e2e-skip "\[Feature:IPv6DualStackAlphaFeature\]|\[Feature:SCTP\]" --timeout 86400 --wait
       - name: Commit files
         run: |
           pushd ./main
             git config --local user.email "action@github.com"
             git config --local user.name "github-actions"
             curdate=$(date +"%m-%d-%Y-%k:%M:%S")
-            git fetch && git rebase
             mkdir -p kind-iptables-conf/antrea/"$curdate"/sonobuoy/
             outfile=$(sonobuoy retrieve)
             sonobuoy results "$outfile" &> kind-iptables-conf/antrea/"$curdate"/sonobuoy/results.log
