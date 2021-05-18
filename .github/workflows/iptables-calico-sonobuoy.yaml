@@ -7,7 +7,7 @@ on:
 
 jobs:
   sonobuoy-iptables-calico-tests:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     env:
       GOPATH: /home/runner/work/k8devel/go
       GO111MODULE: auto
@@ -27,11 +27,15 @@ jobs:
           repository: thekubeworld/k8s-local-dev
           path: k8s-local-dev
       - run: |
+          sudo apt update -y
+          sudo apt install patch wget -y
+          curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+          chmod 700 get_helm.sh
+          ./get_helm.sh
+
           pushd ./k8s-local-dev
             ./k8s-local-dev calico
           popd
-          #sudo apt update
-          #sudo apt install wget -y
           wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.50.0/sonobuoy_0.50.0_linux_amd64.tar.gz
           sudo tar zxvf sonobuoy_0.50.0_linux_amd64.tar.gz -C /bin
           export NSNAME=$(cat /dev/urandom | tr -dc 'a-z' | fold -w 32 | head -n 1)
