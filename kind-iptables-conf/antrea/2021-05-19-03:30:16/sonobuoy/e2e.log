@@ -1,4 +1,4 @@
-failed tests: 30
+failed tests: 10
 [sig-network] ClusterDns [Feature:Example] should create pod that uses dns
 [sig-network] Conntrack should be able to preserve UDP traffic when server pod cycles for a ClusterIP service
 [sig-network] KubeProxy should set TCP CLOSE_WAIT timeout [Privileged]
