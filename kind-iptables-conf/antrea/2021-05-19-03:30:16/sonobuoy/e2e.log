@@ -9,23 +9,3 @@ failed tests: 30
 [sig-network] Networking Granular Checks: Services should update endpoints: udp
 [sig-network] Networking IPerf2 [Feature:Networking-Performance] should run iperf2
 [sig-network] Networking should provide Internet connection for containers [Feature:Networking-IPv6][Experimental][LinuxOnly]
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should be able to handle large requests: http
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should be able to handle large requests: udp
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should function for client IP based session affinity: http [LinuxOnly]
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should function for client IP based session affinity: udp [LinuxOnly]
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should function for endpoint-Service: http
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should function for endpoint-Service: udp
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should function for node-Service: http
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should function for node-Service: udp
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should function for pod-Service: http
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should function for pod-Service: udp
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should function for service endpoints using hostNetwork
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should update endpoints: http
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] Granular Checks: Services Secondary IP Family should update endpoints: udp
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] should be able to reach pod on ipv4 and ipv6 ip [Feature:IPv6DualStack]
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] should create pod, add ipv6 and ipv4 ip to pod ips
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] should create service with ipv4,v6 cluster ip [Feature:IPv6DualStack]
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] should create service with ipv6 cluster ip [Feature:IPv6DualStack]
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] should create service with ipv6,v4 cluster ip [Feature:IPv6DualStack]
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] should have ipv4 and ipv6 internal node ip
-[sig-network] [Feature:IPv6DualStack] [LinuxOnly] should have ipv4 and ipv6 node podCIDRs
