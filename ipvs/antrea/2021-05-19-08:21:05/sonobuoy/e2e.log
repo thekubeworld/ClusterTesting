@@ -1,0 +1,11 @@
+failed tests: 10
+[sig-network] ClusterDns [Feature:Example] should create pod that uses dns
+[sig-network] Conntrack should be able to preserve UDP traffic when server pod cycles for a ClusterIP service
+[sig-network] NetworkPolicy [LinuxOnly] NetworkPolicy between server and client should deny ingress access to updated pod [Feature:NetworkPolicy]
+[sig-network] NetworkPolicy [LinuxOnly] NetworkPolicy between server and client should enforce policy to allow traffic from pods within server namespace based on PodSelector [Feature:NetworkPolicy]
+[sig-network] Networking Granular Checks: Services should function for endpoint-Service: udp
+[sig-network] Networking Granular Checks: Services should function for pod-Service: udp
+[sig-network] Networking Granular Checks: Services should function for service endpoints using hostNetwork
+[sig-network] Networking Granular Checks: Services should update endpoints: udp
+[sig-network] Networking IPerf2 [Feature:Networking-Performance] should run iperf2
+[sig-network] Services should be possible to connect to a service via ExternalIP when the external IP is not assigned to a node
