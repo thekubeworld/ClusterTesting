@@ -1,9 +1,0 @@
-failed tests: 8
-[sig-network] ClusterDns [Feature:Example] should create pod that uses dns
-[sig-network] Conntrack should be able to preserve UDP traffic when server pod cycles for a ClusterIP service
-[sig-network] Networking Granular Checks: Services should function for endpoint-Service: udp
-[sig-network] Networking Granular Checks: Services should function for pod-Service: http
-[sig-network] Networking Granular Checks: Services should function for pod-Service: udp
-[sig-network] Networking Granular Checks: Services should function for service endpoints using hostNetwork
-[sig-network] Networking Granular Checks: Services should update endpoints: udp
-[sig-network] Networking IPerf2 [Feature:Networking-Performance] should run iperf2
