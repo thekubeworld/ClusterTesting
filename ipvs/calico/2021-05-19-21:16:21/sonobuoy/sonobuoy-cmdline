@@ -1,0 +1,1 @@
+time sonobuoy run --namespace sonobuoyantrea --skip-preflight --e2e-focus  "\[sig-network\]|\[Conformance\]" --e2e-skip "\[Feature:IPv6DualStackAlphaFeature\]|\[Feature:SCTP\]|\[Slow\]|\[Feature:SCTPConnectivity\]|\[IPv6DualStack\]|\[CLOSE_WAIT\]|\[Feature:Networking-IPv6\]|\[Feature:IPv6DualStack\]|\[Feature:Networking-IPv6\]\[Experimental\]" --timeout 86400 --wait
